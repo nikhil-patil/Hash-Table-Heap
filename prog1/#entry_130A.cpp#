@@ -1,0 +1,25 @@
+#include "entry_130A.h"
+#include <iostream>
+using namespace std;
+
+Entry::Entry(unsigned int k, int d) {
+	key = k;
+	data = d;
+	next = null;
+}
+
+unsigned int Entry::get_key() {
+	return this.key;
+}
+
+int Entry::get_data() {
+	return this.data;
+}
+
+void Entry::get_next() {
+	return this.next;
+}
+
+void Entry::set_next(Entry e) {
+	next = e;
+}
